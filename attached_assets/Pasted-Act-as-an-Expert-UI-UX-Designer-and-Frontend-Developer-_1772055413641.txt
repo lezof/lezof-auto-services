@@ -1,0 +1,112 @@
+Act as an Expert UI/UX Designer and Frontend Developer. 
+I am building a high-converting Landing Page for a Luxury Automotive Service Center in Riyadh named "Lezof", specifically for the Land Rover Defender (L663) maintenance program.
+
+Please build the complete landing page using HTML, CSS (Tailwind if possible), and simple Vanilla JS for the tabs. Implement the following Design System and Content:
+
+### 1. Design System & CSS Variables (Luxury Dark Mode):
+- Backgrounds:
+  --bg-main: #0A0B0A;
+  --bg-surface: #141514;
+  --bg-surface-hover: #1E201E;
+
+- Typography (Direction RTL, Font: Tajawal or Cairo):
+  --text-primary: #FFFFFF; 
+  --text-secondary: #A1A5A1; 
+  --text-accent: #E5E5E5; 
+
+- Brand Colors:
+  --accent-green-dark: #005A2B;
+  --accent-green-bright: #00A64F;
+
+- UI Rules: Ensure wide white-space, high-end luxury feel, and a sticky mobile CTA at the bottom. Make tables horizontally scrollable on mobile if needed.
+
+### 2. Page Content & Structure (In Arabic):
+
+<section id="hero">
+H1: صيانة ديفندر كما صُممت لتكون. لا مفاجآت.. ولا تنازلات.
+Subtitle: البرنامج الهندسي الشامل لسيارات لاند روفر ديفندر (2020 - 2024) في الرياض. التزام حرفي بجدول الوكالة، قطع أصلية، وتسليم في نفس اليوم.
+Price Anchor: صيانتك الدورية تبدأ من <del>2,999 ريال</del> **1,999 ريال** (الأسعار شفافة قبل أن تصلنا)
+Button: <a href="https://book.lezof.com" class="btn-primary">📅 احجز موعدك الآن – استلم سيارتك اليوم</a>
+Trust Bar: ✓ ضمان على القطع | ✓ فرع متخصص في النفل | ✓ تقرير فحص رقمي قبل البدء
+</section>
+
+<section id="problem">
+H2: نعرف ما يزعجك في مراكز الصيانة التقليدية.
+Subtitle: قيادة ديفندر متعة، لكن صيانتها خارج الوكالة غالباً ما ترافقه مخاوف مبررة:
+Bullets:
+- الفواتير المطاطية: تدخل لتغيير زيت، وتخرج بفاتورة غير مفهومة لإصلاحات لم تطلبها.
+- التغيير العشوائي: استبدال قطع لا تزال في نصف عمرها الافتراضي، فقط لزيادة التكلفة.
+- احتجاز السيارة: الانتظار لأيام بسبب عدم توفر القطع أو سوء إدارة الوقت.
+</section>
+
+<section id="why-us">
+(Design as a Grid of 8 Trust Cards)
+H2: أكثر من مجرد صيانة.. نحن ندير أصولك الهندسية بامتياز.
+Cards:
+1. التزام هندسي دقيق: نطبق جدول الصيانة الرسمي المعتمد من لاند روفر (L663) بحذافيره.
+2. شفافية الفحص الرقمي: قبل أي خطوة، يصلك تقرير فحص مصور ومفصل على هاتفك.
+3. جاهزية فورية للقطع: وفرنا لك شبكة إمداد متكاملة تضمن توفر قطع غيار الديفندر الأصلية في مركزنا التخصصي.
+4. تسليم في نفس اليوم: منظومة عملنا مصممة بدقة لضمان استلامك لسيارتك في نفس اليوم للصيانات المجدولة.
+5. استثمار يعكس ذكاءك: احصل على جودة الوكالة مع توفير يصل إلى 25%.
+6. ضمان شامل وموثوق: كل قطعة غيار يتم تركيبها مغطاة بضمان واضح وصريح.
+7. نخبة من خبراء لاند روفر: سيارتك بين أيدي تقنيين متمرسين يفهمون أدق تفاصيل الديفندر.
+8. موقع استراتيجي (حي النفل): وداعاً لعناء مشاوير الصناعيات. مركزنا يقع في قلب شمال الرياض لراحتك.
+</section>
+
+<section id="pricing-tabs">
+H2: شفافية مطلقة. اختر محرك سيارتك واعرف تكلفتك الآن.
+
+(Design this Stage Indicator block prominently above the tabs)
+<div class="stage-indicator">
+🟢 ممشى سيارتك أقل من 65,000 كم؟ ➔ باقة الصيانة الدورية هي الأنسب لك.
+🔴 ممشى سيارتك تجاوز 90,000 كم؟ ➔ باقة الصيانة الشاملة تعيد سيارتك لضبط المصنع.
+</div>
+
+Tabs: [ 2.0L ] (Active) | [ 3.0L ] | [ 5.0L V8 ]
+
+Table Columns: [الميزة] | [🟢 الصيانة الدورية] | [🔴 الصيانة الشاملة] | [⏱️ متى يُنصح به؟]
+
+If 2.0L is active:
+Row 1 (Price): [ <del>2,999 ريال</del><br>**1,999 ريال**<br><small>(للممشى حتى 65 ألف)</small> ] | [ <del>13,990 ريال</del><br>**8,999 ريال**<br><small>(للممشى فوق 100 ألف)</small> ] | [ ]
+Row 2 (تغيير زيت المحرك والفلتر): [ ✅ ] | [ ✅ ] | [ كل 10,000 كم أو سنة ]
+Row 3 (فحص وتحديث الأنظمة): [ ✅ ] | [ ✅ ] | [ مع كل دخول للمركز ]
+Row 4 (فحص نظام التعليق والمكابح): [ ✅ ] | [ ✅ ] | [ مع كل دخول للمركز ]
+Row 5 (تغيير البواجي): [ — ] | [ ✅ ] | [ بعد 90,000 - 120,000 كم ]
+Row 6 (تغيير زيت القير): [ — ] | [ ✅ ] | [ حسب توصية جدول المصنع ]
+Row 7 (تغيير زيت الدفرنسات والدبل): [ — ] | [ ✅ ] | [ حسب توصية جدول المصنع ]
+Row 8 (تغيير فلاتر الهواء والتكييف): [ — ] | [ ✅ ] | [ كل سنتين أو حسب الفحص ]
+Row 9 (الإجراء): [ <a href="https://book.lezof.com" class="btn-secondary">احجز الدورية</a> ] | [ <a href="https://book.lezof.com" class="btn-secondary">احجز الشاملة</a> ] | [ ]
+
+If 3.0L is active:
+Change Row 1 Price to: [ <del>3,099 ريال</del><br>**2,399 ريال** ] | [ <del>14,990 ريال</del><br>**9,999 ريال** ] (Keep everything else same)
+
+If 5.0L is active:
+Change Row 1 Price to: [ <del>3,499 ريال</del><br>**2,699 ريال** ] | [ <del>17,490 ريال</del><br>**11,990 ريال** ] (Keep everything else same)
+
+(Smart Disclaimer below table):
+💡 ملاحظة هندسية: جميع البنود تُنفذ حرفياً حسب جدول المصنع المعتمد بناءً على رقم الهيكل (VIN). لا يتم تغيير أي جزء غير مستحق.
+</section>
+
+<section id="blog">
+H2: ليس مجرد مركز صيانة.. بل مرجعك الهندسي.
+Cards Carousel:
+1. لماذا لا يكفي تغيير الزيت فقط لسيارات الديفندر في أجواء الرياض؟
+2. 3 أخطاء شائعة تدمر نظام التعليق الهوائي في ديفندر.
+3. متى يصبح تغيير زيت القير ضرورة حتمية، ومتى يكون هدراً؟
+</section>
+
+<section id="risk-reversal">
+H2: أنت صاحب القرار.. دائماً.
+1. تقرير رقمي بين يديك: نرسل لك تقريراً مصوراً لحالة سيارتك قبل البدء.
+2. لا نتحرك بدون موافقتك: لن يتم تغيير أي قطعة إضافية إلا باعتمادك المباشر.
+3. تسعيرة ثابتة: السعر الذي تراه الآن، هو السعر الذي ستدفعه بالنهاية.
+</section>
+
+<section id="final-cta">
+H2: ديفندر مصممة لتدوم. نحن هنا لنضمن ذلك.
+Button: <a href="https://book.lezof.com" class="btn-primary-large">📅 احجز موعد صيانة ديفندر الآن</a>
+</section>
+
+<div class="sticky-footer" style="position: fixed; bottom: 0; width: 100%; z-index: 50; background: rgba(10, 11, 10, 0.9); backdrop-filter: blur(10px); padding: 15px;">
+  <a href="https://book.lezof.com" style="display: block; width: 100%; text-align: center; background: #00A64F; color: #fff; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 1.1rem;">احجز موعدك الآن</a>
+</div>

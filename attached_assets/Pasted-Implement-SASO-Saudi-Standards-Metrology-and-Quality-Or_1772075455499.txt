@@ -1,0 +1,79 @@
+Implement SASO (Saudi Standards, Metrology and Quality Organization) trust elements across the landing page in three places: Trust Strip under Hero, a new standalone section, and inside FAQ.
+
+Keep:
+- dark theme
+- green accent
+- RTL
+- existing spacing and typography style
+- performance (no heavy libraries)
+Do NOT break any layout or existing CTA behavior.
+
+=====================================
+1) HERO TRUST STRIP UPDATE (Under Hero CTA)
+=====================================
+
+Locate the Trust Strip under the main Hero CTA (the row of small trust bullets/icons).
+Replace the current items with these EXACT four items in this order:
+
+✔ "مطابق لجدول المصنع"
+✔ "تسليم في نفس اليوم"
+✔ "توثيق رقمي كامل"
+⭐ "مركز حاصل على تصنيف 4 نجوم من SASO"
+
+Design rules:
+- Use small icons: Check (green) for the first three, Star (gold/yellow or green) for the last one.
+- Keep it one row on desktop, wrap cleanly on mobile.
+- Add a small SASO badge or certificate thumbnail to the right side of the trust strip (RTL).
+  Use a placeholder image path for now: /assets/saso-certificate.png
+  The image should be small (badge-size), clickable, and open a modal (or new tab) to view the certificate.
+  If modal is easier: simple modal with the image and a close button.
+  If not: open link in new tab to /assets/saso-certificate.png
+
+=====================================
+2) NEW SASO SECTION (Standalone Section)
+=====================================
+
+Add a new section AFTER the pricing table section and BEFORE the FAQ section.
+Section must match the page style (premium, minimal, dark).
+
+Title (H2):
+"جهة رقابية تعترف باحترافيتنا."
+
+Body text (two paragraphs max):
+"مركز لزوف حاصل على شهادة تصنيف رسمية من الهيئة السعودية للمواصفات والمقاييس والجودة (SASO)، وفق اللائحة الفنية لتصنيف مراكز صيانة وإصلاح المركبات.
+تصنيف 4 نجوم يؤكد التزامنا بالمعايير التشغيلية والهندسية المعتمدة داخل المملكة."
+
+Add a small button under the text:
+"عرض الشهادة الرسمية"
+- Button style: outline or subtle, not louder than main CTA
+- On click: open the certificate image or PDF in a new tab.
+  Use placeholder URL for now: /assets/saso-certificate.pdf
+
+Add a small footnote under the button (tiny text, gray):
+"صادرة عن الهيئة السعودية للمواصفات والمقاييس والجودة — صالحة حتى 2029"
+
+=====================================
+3) FAQ UPDATE (Add SASO to Warranty Question)
+=====================================
+
+In the FAQ accordion, update / add the first question to be about warranty:
+
+Question:
+"هل الصيانة خارج الوكالة تلغي الضمان؟"
+
+Answer (use this EXACT text with line breaks):
+"وفق أنظمة وزارة التجارة في المملكة، لا يُشترط تنفيذ الصيانة لدى الوكيل للحفاظ على الضمان، طالما تم الالتزام بجدول المصنع واستخدام قطع مطابقة للمواصفات.
+مركز لزوف حاصل على تصنيف SASO رسمي، ويلتزم باللائحة الفنية المعتمدة."
+
+Add one small line below the answer (smaller gray text):
+"نوثق جميع البنود ويمكن تقديمها عند الحاجة."
+
+=====================================
+GENERAL REQUIREMENTS
+=====================================
+
+- Ensure RTL alignment for all new content.
+- Ensure mobile responsiveness.
+- Do not add new heavy dependencies.
+- If assets paths do not exist, create placeholders and comment where to replace them.
+- After changes, report: which components/files were edited and where each SASO element was added.

@@ -1,0 +1,42 @@
+Act as an Expert UI/UX Designer and Frontend Developer. 
+I am building a high-converting Landing Page for a Luxury Automotive Service Center in Riyadh named "Lezof", specifically for the Land Rover Defender (L663) maintenance program.
+
+Please implement the following Design System and CSS Color Variables. The site must be Mobile-First, using a "Luxury Dark Mode" aesthetic that matches the rugged yet premium feel of a Defender.
+
+1. Color System (Tailwind / CSS Variables):
+- Backgrounds:
+  --bg-main: #0A0B0A; (Very Dark Onyx - Main page background)
+  --bg-surface: #141514; (Slightly lighter dark - For Cards, Tables, and Sections)
+  --bg-surface-hover: #1E201E; (For interactive elements like table rows or tabs)
+
+- Typography:
+  --text-primary: #FFFFFF; (Pure White - For main Headings H1, H2 and active tabs)
+  --text-secondary: #A1A5A1; (Metallic Grey - For paragraphs, subtitles, and strikethrough prices)
+  --text-accent: #E5E5E5; (Off-white - For table text and bullet points)
+
+- Brand & Accent Colors (Inspired by Land Rover):
+  --accent-green-dark: #005A2B; (Land Rover British Racing Green - For badges, checkmarks ✅, and subtle borders)
+  --accent-green-bright: #00A64F; (Bright vibrant green - STRICTLY for Primary CTA Buttons to drive high conversion)
+  --accent-red-danger: #D32F2F; (For the "Comprehensive Maintenance" indicator 🔴)
+
+- Borders & Dividers:
+  --border-color: #2A2D2A; (Dark subtle grey/green for separating table columns and cards)
+
+2. Typography Rules:
+- The website is in Arabic (RTL - Right to Left). 
+- Apply `dir="rtl"` to the HTML body.
+- Use a premium modern Arabic font like 'Tajawal', 'Cairo', or 'IBM Plex Sans Arabic' from Google Fonts.
+- Font weights: Use 700/800 for Headings and Prices, 400 for regular text, and 500 for Buttons.
+
+3. UI Components & Styling Rules:
+- Buttons (Primary CTA): Background `--accent-green-bright`, text White, slight hover effect (brightness 110%), soft shadow `box-shadow: 0 4px 14px rgba(0, 166, 79, 0.3);`, border-radius: 6px (not too rounded, keep it rugged).
+- Tables (Pricing/Comparison): Use `--bg-surface` for the table background. The table must be responsive (side-by-side comparison like a pricing tier). Add a 1px solid `--border-color` around the table and between rows.
+- Sticky Mobile CTA: Must be positioned fixed at the bottom, full width on mobile, using a glassmorphism effect (backdrop-filter: blur(10px); background: rgba(10, 11, 10, 0.85);) with the Primary CTA button inside.
+- Logo Placement: The logo is pure White. Place it in the header on the top right (RTL layout) with a transparent background.
+
+4. Layout Requirements:
+- Keep white-space (padding/margin) generous to reflect luxury. 
+- Use CSS Grid or Flexbox for the side-by-side Pricing Table and the interactive Tabs for engine selection (2.0L, 3.0L, 5.0L).
+- Ensure the transition between engine tabs is smooth without page reloads.
+
+Build the HTML structure and CSS based on these exact specifications to achieve a high-end, conversion-focused landing page.

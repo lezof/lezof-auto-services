@@ -1,0 +1,72 @@
+Act as an Expert UX/UI Frontend Developer and Conversion Rate Optimization (CRO) specialist. 
+
+
+
+I need you to build an "In-Page Booking Form & Order Summary" section for a premium auto maintenance landing page (Lezof Center - Saudi Arabia). 
+
+
+
+Tech Stack: Single HTML file using Tailwind CSS (via CDN) and Vanilla JavaScript.
+
+Style: same page
+
+Layout: RTL (`dir="rtl"`) for Arabic content.
+
+
+
+This section will replace the external booking link. It should look like a high-end "Checkout" experience, divided into two main parts (side-by-side on desktop, stacked on mobile):
+
+
+
+PART 1: The Order Summary Card (Visual Confirmation)
+
+- Background: Slightly lighter dark gray (`bg-[#111]`), rounded-xl, subtle border (`border-gray-800`).
+
+- Title: "ملخص طلبك" (Your Order Summary).
+
+- Display dynamic-looking static data (to show the layout):
+
+  - سيارتك (Car):
+
+  - الباقة (Package): الصيانة الشاملة
+
+- Divider line (subtle gray).
+
+- Total Price: "الإجمالي: 0000 ريال" (Make the price large, bold, and red) + "شامل الضريبة" in small gray text.
+
+
+
+PART 2: The Booking Form (Minimalist & Fast)
+
+- Title: "تأكيد الحجز المبدئي" (Confirm Preliminary Booking).
+
+- Input 1 (Name): Text input, placeholder "الاسم", minimalist style (dark background, bottom border or subtle full border, focus ring in red).
+
+- Input 2 (Phone): Tel input. Crucial: Add a static "+966" (Saudi dial code) inside the input on the left side (LTR direction for the numbers, but overall form is RTL). Placeholder: "5xxxxxxxx".
+
+- Disclaimer Text (Small, gray, below inputs): "لا يلزم الدفع الآن. سيقوم مستشار الصيانة بالتواصل معك لتأكيد الموعد ورقم الشاصي (VIN)."
+
+- CTA Button: Large, solid red (`bg-red-600`), text "تأكيد الحجز". Add a hover effect (`hover:bg-red-700`).
+
+
+
+PART 3: JavaScript Logic (The Success State)
+
+- Write a Vanilla JS event listener for the form submission.
+
+- Prevent default submission.
+
+- When clicked, change the button text to "جاري التأكيد..." (Confirming...) for 1.5 seconds to simulate processing.
+
+- After 1.5 seconds, hide the entire form and summary, and display a luxurious "Success State" centered in the container:
+
+  - Large Green Checkmark Icon (SVG).
+
+  - Title: "تم استلام طلبك بنجاح!" (Request received successfully).
+
+  - Subtitle: "أهلاً بك في لزوف. سيتواصل معك مستشار خدمة ديفندر خلال دقائق لتأكيد الموعد النهائي."
+
+
+our Whatsapp No +966920022114
+
+Make the code clean, fully responsive (mobile-first), and production-ready. Do not use external libraries other than Tailwind.
